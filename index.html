@@ -7,12 +7,17 @@
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ 
 </head>
 <body>
   <!-- Navigation Bar -->
   <nav>
     <div class="container">
       <a href="#" class="logo">Adarshin</a>
+      <!-- Hamburger Menu for Mobile -->
+      <div class="menu-toggle" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </div>
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -21,13 +26,13 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="social-links">
-        <a href="https://github.com/your-github" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://github.com/Adarshin121" target="_blank"><i class="fab fa-github"></i></a>
         <a href="https://wa.me/919207271245" target="_blank"><i class="fab fa-whatsapp"></i></a>
-        <a href="https://www.linkedin.com/in/your-linkedin" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/your-instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/adarshin-b-suresh" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://www.instagram.com/ad_r_sn" target="_blank"><i class="fab fa-instagram"></i></a>
       </div>
-    </div>
-  </nav>
+  </div>
+</nav>
 
   <!-- Hero Section -->
   <section id="hero">
@@ -66,6 +71,7 @@
             <li>Django</li>
             <li>Flask</li>
             <li>Data Science</li>
+            <li>ML/AI</li>
           </ul>
         </div>
       </div>
@@ -86,29 +92,39 @@
 
   <!-- Projects Section -->
   <section id="projects">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <h3>Disease Prediction System</h3>
-          <p>Tools: Python, Flask, MySQL, KNN Algorithm</p>
-          <p>Developed a health prediction system using Flask and KNN to assist health authorities in taking preventive action.</p>
-          <a href="#" class="btn">View on GitHub</a>
-        </div>
-        <div class="project-card">
-          <h3>Book Donation Platform</h3>
-          <p>Tools: Django, SQLite, HTML, CSS</p>
-          <p>Built a web platform connecting book donors with recipients, maximizing book reuse and supporting students in need.</p>
-          <a href="#" class="btn">View on GitHub</a>
-        </div>
-        <div class="project-card">
-          <h3>Dental Hospital Management System</h3>
-          <p>Tools: Django, SQLite, Bootstrap</p>
-          <p>Automated hospital operations, improving appointment scheduling and patient record management.</p>
-          <a href="#" class="btn">View on GitHub</a>
-        </div>
+    <!-- Projects Section -->
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+    <div class="projects-carousel">
+      <div class="project-card">
+        <h3>Disease Prediction System</h3>
+        <p>Tools: Python, Flask, MySQL, KNN Algorithm</p>
+        <p>Developed a health prediction system using Flask and KNN to assist health authorities in taking preventive action.</p>
+        <a href="#" class="btn">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Book Donation Platform</h3>
+        <p>Tools: Django, SQLite, HTML, CSS</p>
+        <p>Built a web platform connecting book donors with recipients, maximizing book reuse and supporting students in need.</p>
+        <a href="#" class="btn">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Dental Hospital Management System</h3>
+        <p>Tools: Django, SQLite, Bootstrap</p>
+        <p>Automated hospital operations, improving appointment scheduling and patient record management.</p>
+        <a href="#" class="btn">View on GitHub</a>
+      </div>
+      <div class="project-card">
+        <h3>Plant Selling App</h3>
+        <p>Tools: React, MongoDb, Express, Node</p>
+        <p>An online platform for buying and selling plants, featuring user authentication, order management, and secure payments.</p>
+        <a href="#" class="btn">View on GitHub</a>
       </div>
     </div>
+  </div>
+</section>
+
   </section>
 
   <!-- Training Section -->
@@ -118,28 +134,48 @@
       <div class="training-carousel">
         <div class="training-card">
           <img src="https://media.licdn.com/dms/image/v2/D5622AQGfOXxaYb0PfA/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1733641339559?e=1741219200&v=beta&t=ykgUSkIBS1b771iLmEi2fTHTQm1ST4HjHV9fWDG4StQ" alt="Training 1">
-          <h3>R Programming</h3>
+          <h3>Project Mentoring (MERN Stack) – Marian College, Kuttikkanam</h3>
         </div>
         <div class="training-card">
           <img src="https://media.licdn.com/dms/image/v2/D5622AQE2CpRjHPT1ag/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1727091332647?e=1741219200&v=beta&t=_TDgdniw5sDeyA5mt6fWf3nKEzH8dueUIZ88TWDBAtk" alt="Training 2">
-          <h3>TCS YEP</h3>
+          <h3>One-Month Internship (MERN Stack) – MCA students at CCSIT Vadakara</h3>
         </div>
         <div class="training-card">
           <img src="https://media.licdn.com/dms/image/v2/D5622AQHEJUKOgyrbzw/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1724002102627?e=1741219200&v=beta&t=jhqB3fwaF10fQrlaKzJyIg-gE9vNu1maeo75pWJaBNc" alt="Training 3">
-          <h3>NPTEL - C Programming</h3>
+          <h3>One-Month Internship (MERN Stack) – MCA students at KMCT College</h3>
         </div>
         <div class="training-card">
           <img src="https://media.licdn.com/dms/image/v2/D5622AQGoReirgnKVNQ/feedshare-shrink_1280/feedshare-shrink_1280/0/1724002101649?e=1741219200&v=beta&t=iLf8TdpVBCjpmSm53KlPW0fT3GrQ7EcqCWgLHvjJFCw" alt="Training 4">
-          <h3>Python Django</h3>
+          <h3>Excel & Power BI Training – BBA students at Rajagiri College of Arts and Science</h3>
         </div>
         <div class="training-card">
             <img src="https://media.licdn.com/dms/image/v2/D5622AQGTWjihF2kdLg/feedshare-shrink_2048_1536/feedshare-shrink_2048_1536/0/1724002104038?e=1741219200&v=beta&t=rU-RmCAY9iFl6ZPhGGaNd8Jt87gClh9Q2y9I9pZRN24" alt="Training 4">
-            <h3>Python Django</h3>
+            <h3>ML/AI Internship</h3>
           </div>
+          <div class="training-card">
+            <img src="https://media.licdn.com/dms/image/v2/D5622AQFqXkoEuoudVQ/feedshare-shrink_2048_1536/B56ZTP2_DvHEAw-/0/1738654093257?e=1742428800&v=beta&t=0s7P--2a-HlHxCHkWwdXLyygs0INAhWTExWc9rrYOKI" alt="Training 4">
+            <h3>React Workshop –College of Engineering Trikaripur</h3>
+          </div>
+          <div class="training-card">
+            <img src="https://media.licdn.com/dms/image/v2/D5622AQFoK3AzVw9gOA/feedshare-shrink_2048_1536/B56ZTP2_FdHQAw-/0/1738654135123?e=1742428800&v=beta&t=lKV_Lwqjv5diTYDYPTSMe64a2dMcMFVPKuwTEYgReiM" alt="Training 4">
+            <h3>Full Stack Development(MERN Stack) Internship Providence Women's College,Calicut</h3>
+          </div>
+          <div class="training-card">
+            <img src="https://media.licdn.com/dms/image/v2/D5622AQHR2TdZXqNVIA/feedshare-shrink_2048_1536/B56ZTP2_DKHwAs-/0/1738654093068?e=1742428800&v=beta&t=KMZ0H1Kqn2KyUU_JlHspSMPBo0TpYcPSzvl9_7Jhi0A" alt="Training 4">
+            <h3>React Workshop –College of Engineering Trikaripur</h3>
+          </div>
+          <div class="training-card">
+            <img src="https://media.licdn.com/dms/image/v2/D5622AQFpwI8Kobk7tw/feedshare-shrink_2048_1536/B56ZTP2_DQHEAs-/0/1738654093414?e=1742428800&v=beta&t=VWLAQyKECpeLJBkfHF5R8I-1kScpWh01zpwFBW2M73w" alt="Training 4">
+            <h3>Full Stack Development (MERN Stack) Internship Openbatch,Calicut</h3>
+          </div>
+          <div class="training-card">
+            <img src="https://media.licdn.com/dms/image/v2/D5622AQFYKzGCPCWPeg/feedshare-shrink_2048_1536/B56ZTP2_CjHsAo-/0/1738654087092?e=1742428800&v=beta&t=8xyj-UgIkVwgbCgbqhgfJoEIupjjPDPB6wrviimKAfk" alt="Training 4">
+            <h3>Full Stack Development (MERN Stack) Internship Gurudev College,Kannur</h3>
+          <!-- </div>
           <div class="training-card">
             <img src="" alt="Training 4">
             <h3>Python Django</h3>
-          </div>
+          </div> -->
       </div>
     </div>
   </section>
@@ -150,7 +186,7 @@
       <h2>Contact Me</h2>
       <p>Let's connect! Whether you have a project idea, a question, or just want to say hi, feel free to reach out.</p>
       <div class="contact-info">
-        <p><i class="fas fa-envelope"></i> adarshineev21@gmail.com</p>
+        <p><i class="fas fa-envelope"></i> adarshincev21@gmail.com</p>
         <p><i class="fas fa-phone"></i> +91 9207271245</p>
       </div>
       <form>
@@ -168,5 +204,11 @@
       <p>&copy; 2023 Adarshin. All rights reserved.</p>
     </div>
   </footer>
+  <script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.classList.toggle('active');
+    }
+  </script>
 </body>
 </html>
